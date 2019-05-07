@@ -23,12 +23,13 @@ def shift_with_args(array, element)
 end
 
 def using_concat(array1, array2)
-  new_array = []
-  array.concat(new_array)
+  array1 = []
+  array1.concat(array2)
 end
 
-def using_insert(index, element)
+def using_insert(array, element)
   array.insert(4, element)
+end
 
 def using_uniq(array)
   array.uniq
@@ -43,5 +44,5 @@ def using_delete(array, string)
 end
 
 def using_delete_at(array, integer)
-  array.delete_at(interger)
+  array.delete_at(integer)
 end
